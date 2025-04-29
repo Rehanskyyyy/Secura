@@ -6,9 +6,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Manager />
-      <Footer />
+      <div className='min-h-screen flex flex-col'>
+        <Navbar />
+        <Manager />
+        <Footer />
+      </div>
     </>
   )
 }
