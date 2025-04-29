@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Sanfrancisco;
+  src: url("./assets/SFPRODISPLAYREGULAR.woff2") format("woff2")
+}
+
+* {
+  font-family: Sanfrancisco, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+  /* Width of the scrollbar */
+  height: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #1f2937;
+  /* Dark track color (gray-800) */
+  /* border-radius: 5px; */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #757a80;
+  /* Thumb color (gray-700) */
+  border-radius: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+  /* Lighter on hover (gray-500) */
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
