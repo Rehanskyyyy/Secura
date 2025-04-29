@@ -17,4 +17,4 @@ Secura lets you safely store and manage your passwords without sending them anyw
 - Tailwind CSS
 
 ## Demo
-- *Coming soon*
+- https://secura-phi.vercel.app/
