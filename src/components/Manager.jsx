@@ -21,7 +21,6 @@ const Manager = () => {
         if (form.site.length >= 1 && form.username.length >= 1 && form.password.length >= 1) {
             setPasswordArray([...passwordArray, { ...form, id: uuidv4() }])
             localStorage.setItem("passwords", JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]))
-            console.log([...passwordArray, form])
             setForm({ site: '', username: '', password: '' })
             toast.success('Password saved successfully',
                 {
@@ -51,7 +50,6 @@ const Manager = () => {
     }
 
     const editPassword = (id) => {
-        console.log("Editing password with id ", id)
         setForm(passwordArray.filter(item => item.id === id)[0])
         setPasswordArray(passwordArray.filter(item => item.id !== id))
     }
